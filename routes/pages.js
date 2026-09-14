@@ -9,6 +9,15 @@ const projects = [
   { name: "Caleb", tag: "Lemur" },
 ];
 
+router.get("/entries", (req, res) => {
+  const entries = [
+    { title: "First note", body: "This is the first note." },
+    { title: "Second note", body: "This is the second note." },
+    { title: "Third note", body: "This is the third note." },
+  ];
+  res.render("entries", { title: "My Notes", entries });
+});
+
 router.get("/", (req, res) => {
   res.send("Home page");
 });
