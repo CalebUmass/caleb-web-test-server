@@ -9,6 +9,16 @@ const projects = [
   { name: "Caleb", tag: "Lemur" },
 ];
 
+const events = [
+  { title: "Career fair" },
+  { title: "Hackathon kickoff" },
+  { title: "Goat runs" },
+];
+
+router.get("/events", (req, res) => {
+  res.render("events", { events });
+});
+
 router.get("/entries", (req, res) => {
   const entries = [
     { title: "First note", body: "This is the first note." },

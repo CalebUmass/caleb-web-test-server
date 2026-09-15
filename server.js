@@ -1,7 +1,7 @@
 import express from "express";
 import pagesRouter from "./routes/pages.js";
 import apiRouter from "./routes/api.js";
-import { join } from "path";
+import { join } from "node:path";
 
 const app = express();
 

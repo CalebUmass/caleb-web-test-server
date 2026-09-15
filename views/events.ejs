@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<ul>
+  <% if (events.length === 0) { %>
+    <strong> No events </strong>
+  <% } else { %>
+    <% events.forEach(event => { %>
+      <li> <%= event.title %> </li>
+    <% }); %>
+  <% } %>
+</ul>
