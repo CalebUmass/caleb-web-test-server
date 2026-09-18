@@ -32,10 +32,6 @@ router.get("/", (req, res) => {
   res.send("Home page");
 });
 
-router.get("/about", (req, res) => {
-  res.render("about");
-});
-
 router.get("/projects", (req, res) => {
   const tag = req.query.tag;
   const name = req.query.name;
