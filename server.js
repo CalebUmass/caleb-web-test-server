@@ -17,6 +17,10 @@ app.get("/about", (req, res) => {
   res.render("about", { title: "About" });
 });
 
+app.get("/malachiflynn", (req, res) => {
+  res.render("about", { title: "About" });
+});
+
 app.use((req, res) => {
   res.status(404).send("Page not found.");
 });
@@ -24,3 +28,4 @@ app.use((req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+// work in progress
